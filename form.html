@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en-US" style="font-family: Roboto, Arial, sans-serif; font-size: 10px;" dir="ltr" gl="PL">
+<head>
+<title></title>
+<style>
+.ytd-comment-renderer-1 {
+	display: block;
+	margin-bottom: 8px;
+}
+.ytd-comment-thread-renderer-1 .ytd-comment-thread-renderer#comment {
+	margin-bottom: 0px;
+}
+.ytd-comment-thread-renderer-1 {
+	display: block;
+	margin-bottom: 16px;
+}
+canvas, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, embed, fieldset, font, form, h1, h2, h3, h4, h5, h6, hr, i, iframe, img, ins, kbd, label, legend, li, menu, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+.ytd-item-section-renderer-1 canvas.ytd-item-section-renderer, .ytd-item-section-renderer-1 caption.ytd-item-section-renderer, .ytd-item-section-renderer-1 center.ytd-item-section-renderer, .ytd-item-section-renderer-1 cite.ytd-item-section-renderer, .ytd-item-section-renderer-1 code.ytd-item-section-renderer, .ytd-item-section-renderer-1 dd.ytd-item-section-renderer, .ytd-item-section-renderer-1 del.ytd-item-section-renderer, .ytd-item-section-renderer-1 dfn.ytd-item-section-renderer, .ytd-item-section-renderer-1 div.ytd-item-section-renderer, .ytd-item-section-renderer-1 dl.ytd-item-section-renderer, .ytd-item-section-renderer-1 dt.ytd-item-section-renderer, .ytd-item-section-renderer-1 em.ytd-item-section-renderer, .ytd-item-section-renderer-1 embed.ytd-item-section-renderer, .ytd-item-section-renderer-1 fieldset.ytd-item-section-renderer, .ytd-item-section-renderer-1 font.ytd-item-section-renderer, .ytd-item-section-renderer-1 form.ytd-item-section-renderer, .ytd-item-section-renderer-1 h1.ytd-item-section-renderer, .ytd-item-section-renderer-1 h2.ytd-item-section-renderer, .ytd-item-section-renderer-1 h3.ytd-item-section-renderer, .ytd-item-section-renderer-1 h4.ytd-item-section-renderer, .ytd-item-section-renderer-1 h5.ytd-item-section-renderer, .ytd-item-section-renderer-1 h6.ytd-item-section-renderer, .ytd-item-section-renderer-1 hr.ytd-item-section-renderer, .ytd-item-section-renderer-1 i.ytd-item-section-renderer, .ytd-item-section-renderer-1 iframe.ytd-item-section-renderer, .ytd-item-section-renderer-1 img.ytd-item-section-renderer, .ytd-item-section-renderer-1 ins.ytd-item-section-renderer, .ytd-item-section-renderer-1 kbd.ytd-item-section-renderer, .ytd-item-section-renderer-1 label.ytd-item-section-renderer, .ytd-item-section-renderer-1 legend.ytd-item-section-renderer, .ytd-item-section-renderer-1 li.ytd-item-section-renderer, .ytd-item-section-renderer-1 menu.ytd-item-section-renderer, .ytd-item-section-renderer-1 object.ytd-item-section-renderer, .ytd-item-section-renderer-1 ol.ytd-item-section-renderer, .ytd-item-section-renderer-1 p.ytd-item-section-renderer, .ytd-item-section-renderer-1 pre.ytd-item-section-renderer, .ytd-item-section-renderer-1 q.ytd-item-section-renderer, .ytd-item-section-renderer-1 s.ytd-item-section-renderer, .ytd-item-section-renderer-1 samp.ytd-item-section-renderer, .ytd-item-section-renderer-1 small.ytd-item-section-renderer, .ytd-item-section-renderer-1 span.ytd-item-section-renderer, .ytd-item-section-renderer-1 strike.ytd-item-section-renderer, .ytd-item-section-renderer-1 strong.ytd-item-section-renderer, .ytd-item-section-renderer-1 sub.ytd-item-section-renderer, .ytd-item-section-renderer-1 sup.ytd-item-section-renderer, .ytd-item-section-renderer-1 table.ytd-item-section-renderer, .ytd-item-section-renderer-1 tbody.ytd-item-section-renderer, .ytd-item-section-renderer-1 td.ytd-item-section-renderer, .ytd-item-section-renderer-1 tfoot.ytd-item-section-renderer, .ytd-item-section-renderer-1 th.ytd-item-section-renderer, .ytd-item-section-renderer-1 thead.ytd-item-section-renderer, .ytd-item-section-renderer-1 tr.ytd-item-section-renderer, .ytd-item-section-renderer-1 tt.ytd-item-section-renderer, .ytd-item-section-renderer-1 u.ytd-item-section-renderer, .ytd-item-section-renderer-1 ul.ytd-item-section-renderer, .ytd-item-section-renderer-1 var.ytd-item-section-renderer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+.ytd-item-section-renderer-1 {
+	display: block;
+}
+.ytd-comments-1 {
+	display: block;
+}
+.ytd-watch-flexy-4 canvas.ytd-watch-flexy, .ytd-watch-flexy-4 caption.ytd-watch-flexy, .ytd-watch-flexy-4 center.ytd-watch-flexy, .ytd-watch-flexy-4 cite.ytd-watch-flexy, .ytd-watch-flexy-4 code.ytd-watch-flexy, .ytd-watch-flexy-4 dd.ytd-watch-flexy, .ytd-watch-flexy-4 del.ytd-watch-flexy, .ytd-watch-flexy-4 dfn.ytd-watch-flexy, .ytd-watch-flexy-4 div.ytd-watch-flexy, .ytd-watch-flexy-4 dl.ytd-watch-flexy, .ytd-watch-flexy-4 dt.ytd-watch-flexy, .ytd-watch-flexy-4 em.ytd-watch-flexy, .ytd-watch-flexy-4 embed.ytd-watch-flexy, .ytd-watch-flexy-4 fieldset.ytd-watch-flexy, .ytd-watch-flexy-4 font.ytd-watch-flexy, .ytd-watch-flexy-4 form.ytd-watch-flexy, .ytd-watch-flexy-4 h1.ytd-watch-flexy, .ytd-watch-flexy-4 h2.ytd-watch-flexy, .ytd-watch-flexy-4 h3.ytd-watch-flexy, .ytd-watch-flexy-4 h4.ytd-watch-flexy, .ytd-watch-flexy-4 h5.ytd-watch-flexy, .ytd-watch-flexy-4 h6.ytd-watch-flexy, .ytd-watch-flexy-4 hr.ytd-watch-flexy, .ytd-watch-flexy-4 i.ytd-watch-flexy, .ytd-watch-flexy-4 iframe.ytd-watch-flexy, .ytd-watch-flexy-4 img.ytd-watch-flexy, .ytd-watch-flexy-4 ins.ytd-watch-flexy, .ytd-watch-flexy-4 kbd.ytd-watch-flexy, .ytd-watch-flexy-4 label.ytd-watch-flexy, .ytd-watch-flexy-4 legend.ytd-watch-flexy, .ytd-watch-flexy-4 li.ytd-watch-flexy, .ytd-watch-flexy-4 menu.ytd-watch-flexy, .ytd-watch-flexy-4 object.ytd-watch-flexy, .ytd-watch-flexy-4 ol.ytd-watch-flexy, .ytd-watch-flexy-4 p.ytd-watch-flexy, .ytd-watch-flexy-4 pre.ytd-watch-flexy, .ytd-watch-flexy-4 q.ytd-watch-flexy, .ytd-watch-flexy-4 s.ytd-watch-flexy, .ytd-watch-flexy-4 samp.ytd-watch-flexy, .ytd-watch-flexy-4 small.ytd-watch-flexy, .ytd-watch-flexy-4 span.ytd-watch-flexy, .ytd-watch-flexy-4 strike.ytd-watch-flexy, .ytd-watch-flexy-4 strong.ytd-watch-flexy, .ytd-watch-flexy-4 sub.ytd-watch-flexy, .ytd-watch-flexy-4 sup.ytd-watch-flexy, .ytd-watch-flexy-4 table.ytd-watch-flexy, .ytd-watch-flexy-4 tbody.ytd-watch-flexy, .ytd-watch-flexy-4 td.ytd-watch-flexy, .ytd-watch-flexy-4 tfoot.ytd-watch-flexy, .ytd-watch-flexy-4 th.ytd-watch-flexy, .ytd-watch-flexy-4 thead.ytd-watch-flexy, .ytd-watch-flexy-4 tr.ytd-watch-flexy, .ytd-watch-flexy-4 tt.ytd-watch-flexy, .ytd-watch-flexy-4 u.ytd-watch-flexy, .ytd-watch-flexy-4 ul.ytd-watch-flexy, .ytd-watch-flexy-4 var.ytd-watch-flexy {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+.ytd-watch-flexy-4 .ytd-watch-flexy#primary {
+	padding-right: 24px;
+}
+[flexy_].ytd-watch-flexy-4 .ytd-watch-flexy#primary {
+	margin-left: 24px;
+	min-width: calc(360px * (16 /9));
+	-ms-flex: 1 1 0.000000001px;
+	-webkit-flex: 1;
+	flex: 1;
+	-webkit-flex-basis: 0.000000001px;
+	flex-basis: 0px;
+	-ms-flex: 0 1 100%;
+}
+:not([theater]):not([fullscreen]).ytd-watch-flexy-4 .ytd-watch-flexy#primary, :not([theater]):not([fullscreen]).ytd-watch-flexy-4 .ytd-watch-flexy#secondary {
+	padding-top: 24px;
+}
+[flexy_][is-extra-wide-video_][is-two-columns_].ytd-watch-flexy-4 .ytd-watch-flexy#primary, [flexy_][is-four-three-to-sixteen-nine-video_][is-two-columns_].ytd-watch-flexy-4 .ytd-watch-flexy#primary {
+	max-width: calc( (100vh - (56px + 24px + 136px)) * (16 /9));
+	min-width: calc(360px * (16 /9));
+}
+.ytd-watch-flexy-4 .ytd-watch-flexy#columns {
+	margin: 0 auto;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+[flexy_].ytd-watch-flexy-4 .ytd-watch-flexy#columns {
+	max-width: calc(1280px + (402px + (3 * 24px)));
+}
+[flexy_][is-two-columns_].ytd-watch-flexy-4 .ytd-watch-flexy#columns {
+	min-width: calc(360px * (16 /9) + 3 * 24px + 300px);
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.ytd-watch-flexy-4 {
+	min-width: 0px;
+}
+.ytd-page-manager-1 > *.ytd-page-manager {
+	-ms-flex: 1 1 1e-9px;
+	-webkit-flex: 1;
+	flex: 1;
+	-webkit-flex-basis: 1e-9px;
+	flex-basis: 0px;
+}
+.ytd-page-manager-1 {
+	display: block;
+	overflow-y: auto;
+	margin-top: 56px;
+}
+.ytd-app-1 .ytd-app#page-manager {
+	overflow-x: auto;
+	margin-top: 56px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex: 1 1 1e-9px;
+	-webkit-flex: 1;
+	flex: 1;
+	-webkit-flex-basis: 1e-9px;
+	flex-basis: 0px;
+}
+.ytd-app-1 canvas.ytd-app, .ytd-app-1 caption.ytd-app, .ytd-app-1 center.ytd-app, .ytd-app-1 cite.ytd-app, .ytd-app-1 code.ytd-app, .ytd-app-1 dd.ytd-app, .ytd-app-1 del.ytd-app, .ytd-app-1 dfn.ytd-app, .ytd-app-1 div.ytd-app, .ytd-app-1 dl.ytd-app, .ytd-app-1 dt.ytd-app, .ytd-app-1 em.ytd-app, .ytd-app-1 embed.ytd-app, .ytd-app-1 fieldset.ytd-app, .ytd-app-1 font.ytd-app, .ytd-app-1 form.ytd-app, .ytd-app-1 h1.ytd-app, .ytd-app-1 h2.ytd-app, .ytd-app-1 h3.ytd-app, .ytd-app-1 h4.ytd-app, .ytd-app-1 h5.ytd-app, .ytd-app-1 h6.ytd-app, .ytd-app-1 hr.ytd-app, .ytd-app-1 i.ytd-app, .ytd-app-1 iframe.ytd-app, .ytd-app-1 img.ytd-app, .ytd-app-1 ins.ytd-app, .ytd-app-1 kbd.ytd-app, .ytd-app-1 label.ytd-app, .ytd-app-1 legend.ytd-app, .ytd-app-1 li.ytd-app, .ytd-app-1 menu.ytd-app, .ytd-app-1 object.ytd-app, .ytd-app-1 ol.ytd-app, .ytd-app-1 p.ytd-app, .ytd-app-1 pre.ytd-app, .ytd-app-1 q.ytd-app, .ytd-app-1 s.ytd-app, .ytd-app-1 samp.ytd-app, .ytd-app-1 small.ytd-app, .ytd-app-1 span.ytd-app, .ytd-app-1 strike.ytd-app, .ytd-app-1 strong.ytd-app, .ytd-app-1 sub.ytd-app, .ytd-app-1 sup.ytd-app, .ytd-app-1 table.ytd-app, .ytd-app-1 tbody.ytd-app, .ytd-app-1 td.ytd-app, .ytd-app-1 tfoot.ytd-app, .ytd-app-1 th.ytd-app, .ytd-app-1 thead.ytd-app, .ytd-app-1 tr.ytd-app, .ytd-app-1 tt.ytd-app, .ytd-app-1 u.ytd-app, .ytd-app-1 ul.ytd-app, .ytd-app-1 var.ytd-app {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+.ytd-app-1 {
+	background: #f9f9f9;
+	display: block;
+	left: 0px;
+	min-height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+body {
+	transition: opacity ease-in 0.2s;
+}
+body {
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
+}
+html {
+	background-color: #f9f9f9 !important;
+	-webkit-text-size-adjust: none;
+}
+html:not(.style-scope) {
+	0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 1px -2px rgba(0, 0, 0, 0.2): ;
+	0 1px 8px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 3px -2px rgba(0, 0, 0, 0.4): ;
+	0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.4): ;
+	0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 5px -1px rgba(0, 0, 0, 0.4): ;
+	0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                    0 5px 5px -3px rgba(0, 0, 0, 0.4): ;
+	0 4px 22px 3px rgba(0, 0, 0, 0.12),
+                    0 6px 7px -4px rgba(0, 0, 0, 0.4): ;
+	0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                    0  8px 10px -5px rgba(0, 0, 0, 0.4): ;
+	0 9px 46px 8px rgba(0, 0, 0, 0.12),
+                    0 11px 15px -7px rgba(0, 0, 0, 0.4): ;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#body {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+.ytd-expander-4 > * {
+	word-wrap: break-word;
+	min-width: 0px;
+}
+[hidden] {
+	display: none !important;
+}
+[hidden] {
+	display: none !important;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#author-thumbnail {
+	-ms-flex: none;
+	-webkit-flex: none;
+	flex: none;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#main {
+	min-width: 0px;
+	-ms-flex: 1 1 1e-9px;
+	-webkit-flex: 1;
+	flex: 1;
+	-webkit-flex-basis: 1e-9px;
+	flex-basis: 0px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#header {
+	margin-bottom: 2px;
+}
+.ytd-expander-4 {
+	display: block;
+}
+.ytd-comment-renderer-1 .published-time-text.ytd-comment-renderer {
+	color: #606060;
+	white-space: nowrap;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	letter-spacing: inherit;
+	text-transform: none;
+}
+.ytd-comment-renderer-1 .published-time-text.below-comment.ytd-comment-renderer {
+	height: 20px;
+	margin-top: 2px;
+}
+.ytd-comment-action-buttons-renderer-1 {
+	display: block;
+	color: #606060;
+	min-height: 16px;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#action-buttons {
+	margin-top: 4px;
+}
+.ytd-button-renderer-4 {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.ytd-button-renderer-4 {
+	display: inline-block;
+	text-transform: uppercase;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#view-threaded-replies, .ytd-comment-renderer-1 .ytd-comment-renderer#hide-threaded-replies {
+	display: flex;
+	text-transform: none;
+	color: #065fd4;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#toolbar {
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+.ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#vote-count-left {
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 16px;
+	font-size: 1.3rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.ytd-toggle-button-renderer-2 {
+	vertical-align: middle;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.ytd-toggle-button-renderer-2 {
+	display: inline-block;
+	text-transform: uppercase;
+}
+[is-icon-button].ytd-toggle-button-renderer-2 {
+	color: ;
+}
+[is-icon-button].ytd-toggle-button-renderer-2.style-text {
+	color: #909090;
+}
+[is-icon-button][has-no-text].ytd-toggle-button-renderer-2 {
+	font-size: 0px;
+}
+.ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#like-button, .ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#dislike-button {
+	font-size: 1.3rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.ytd-comment-action-buttons-renderer-1 [hidden].ytd-comment-action-buttons-renderer#vote-count-left + .ytd-comment-action-buttons-renderer#like-button {
+	margin-left: -8px;
+}
+.ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#vote-count-middle {
+	display: inline-block;
+	margin-right: 8px;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	letter-spacing: inherit;
+	text-transform: none;
+}
+.ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#share-button {
+	margin-left: 16px;
+	margin-right: 8px;
+}
+.ytd-button-renderer-5 {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.ytd-button-renderer-5 {
+	display: inline-block;
+	text-transform: uppercase;
+}
+[is-paper-button].ytd-button-renderer-5 {
+	color: #606060;
+	border-color: #606060;
+}
+[is-paper-button].ytd-button-renderer-5 {
+	border-radius: 2px;
+	margin: 0;
+}
+[is-paper-button].ytd-button-renderer-5.style-text {
+	color: #606060;
+}
+:not([use-comment-icon]).ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#reply-button ytd-button-renderer:not([is-icon-button]).ytd-comment-action-buttons-renderer.ytd-comment-action-buttons-renderer, :not([use-comment-icon]).ytd-comment-action-buttons-renderer-1 .ytd-comment-action-buttons-renderer#reply-button-end ytd-button-renderer:not([is-icon-button]).ytd-comment-action-buttons-renderer.ytd-comment-action-buttons-renderer {
+	color: #606060;
+	font-size: 1.3rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.yt-simple-endpoint {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--yt-endpoint-color, var(--yt-spec-text-primary));
+}
+.ytd-button-renderer-5 a.ytd-button-renderer {
+	display: flex;
+}
+.ytd-button-renderer-5 .yt-simple-endpoint.ytd-button-renderer {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: #030303;
+}
+.ytd-button-renderer-5 .yt-simple-endpoint.ytd-button-renderer {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: #030303;
+}
+.ytd-button-renderer-5 a.yt-simple-endpoint.ytd-button-renderer {
+	color: inherit;
+	border-radius: inherit;
+	text-decoration: none;
+}
+.paper-button-1 {
+	display: inline-flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: relative;
+	box-sizing: border-box;
+	min-width: 5.14em;
+	margin: 0 0.29em;
+	background: transparent;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	font: inherit;
+	text-transform: uppercase;
+	outline-width: 0px;
+	border-radius: 3px;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	z-index: 0;
+	padding: 0.7em 0.57em;
+	font-family: "Roboto", "Noto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: ;
+	border: ;
+	width: ;
+	margin: 0 0.29em;
+	background-color: ;
+	text-transform: uppercase;
+	min-width: 5.14em;
+}
+[animated].paper-button-1 {
+	transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ytd-button-renderer-5 paper-button.ytd-button-renderer {
+	min-width: 5.14em;
+	font-size: inherit;
+}
+.ytd-button-renderer-5 paper-button.ytd-button-renderer {
+	display: inline-block;
+	text-align: center;
+	font-family: inherit;
+}
+.ytd-button-renderer-5 paper-button.ytd-button-renderer {
+	width: auto;
+	height: auto;
+	border-radius: inherit;
+	margin: 0;
+	padding: 8px 16px;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	justify-content: center;
+}
+.ytd-button-renderer-5 .ytd-button-renderer#button {
+	color: ;
+	background-color: ;
+}
+.ytd-button-renderer-5 .ytd-button-renderer#button {
+	color: inherit;
+	background-color: transparent;
+	text-transform: inherit;
+}
+.ytd-button-renderer-5 yt-formatted-string.ytd-button-renderer {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ytd-toggle-button-renderer-2 a.ytd-toggle-button-renderer {
+	display: flex;
+}
+.ytd-toggle-button-renderer-2 .yt-simple-endpoint.ytd-toggle-button-renderer {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: #030303;
+}
+.ytd-toggle-button-renderer-2 .yt-simple-endpoint.ytd-toggle-button-renderer {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: #030303;
+}
+.ytd-toggle-button-renderer-2 a.yt-simple-endpoint.ytd-toggle-button-renderer {
+	color: inherit;
+	border-radius: inherit;
+	text-decoration: none;
+}
+.yt-icon-button-2 {
+	display: inline-block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	font-size: 0px;
+}
+.ytd-toggle-button-renderer-2 button.ytd-toggle-button-renderer, .ytd-toggle-button-renderer-2 yt-icon-button.ytd-toggle-button-renderer {
+	padding: 1px 6px;
+}
+.ytd-toggle-button-renderer-2 yt-icon-button.ytd-toggle-button-renderer {
+	width: 32px;
+	height: 32px;
+	color: #111111;
+}
+.ytd-toggle-button-renderer-2 yt-icon-button.ytd-toggle-button-renderer {
+	line-height: 1;
+	padding: 8px;
+	width: 32px;
+	height: 32px;
+}
+.ytd-toggle-button-renderer-2 .ytd-toggle-button-renderer#button {
+	color: ;
+	background-color: ;
+}
+.ytd-toggle-button-renderer-2 .ytd-toggle-button-renderer#button {
+	color: inherit;
+	background-color: transparent;
+	text-transform: inherit;
+}
+.yt-icon-button-2 button.yt-icon-button {
+	vertical-align: middle;
+	color: inherit;
+	outline: none;
+	background: none;
+	margin: 0;
+	border: none;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 0;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.yt-icon-1, .yt-icon-1 .yt-icon-container.yt-icon {
+	display: inline-flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: relative;
+	vertical-align: middle;
+	fill: currentColor;
+	stroke: none;
+	width: 24px;
+	height: 24px;
+	margin-left: ;
+	margin-bottom: ;
+	margin-right: ;
+	width: 24px;
+	height: 24px;
+	margin-top: ;
+}
+.yt-icon-button-2 button.yt-icon-button > yt-icon {
+	width: 100%;
+	height: 100%;
+}
+.yt-formatted-string-5 a.yt-formatted-string {
+	color: #065fd4;
+}
+.yt-formatted-string-5 .yt-simple-endpoint.yt-formatted-string {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: #606060;
+}
+.yt-formatted-string-5 a.yt-simple-endpoint.yt-formatted-string {
+	color: #606060;
+	text-decoration: none;
+}
+[has-link-only_]:not([force-default-style]).yt-formatted-string-5 a.yt-simple-endpoint.yt-formatted-string {
+	color: #606060;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#voted-option {
+	display: block;
+	color: #030303;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.1rem;
+	letter-spacing: normal;
+}
+[split-lines].yt-formatted-string-6 {
+	white-space: pre-wrap;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#content-text {
+	color: #030303;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.1rem;
+	letter-spacing: normal;
+	line-height: 2rem;
+}
+.ytd-comment-renderer-1 .more-button.ytd-comment-renderer, .ytd-comment-renderer-1 .less-button.ytd-comment-renderer {
+	text-transform: none;
+	color: #606060;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	letter-spacing: normal;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#header-badge {
+	margin-bottom: 8px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#header-author {
+	-ms-flex-align: baseline;
+	-webkit-align-items: baseline;
+	align-items: baseline;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+.ytd-comment-renderer-1 .yt-simple-endpoint.ytd-comment-renderer#author-text {
+    margin-right: 4px;
+    color: #030303;
+    margin-bottom: 2px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#sponsor-comment-badge {
+	align-self: start;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#author-comment-badge, .ytd-comment-renderer-1 .ytd-comment-renderer#sponsor-comment-badge {
+	max-width: 100%;
+	box-sizing: border-box;
+	padding-right: 4px;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#moderation-reason-divider {
+	color: #606060;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	letter-spacing: inherit;
+	text-transform: none;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#moderation-reason-text {
+	color: #606060;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	letter-spacing: inherit;
+	text-transform: none;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#linked-comment-badge {
+	margin-right: 8px;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#pinned-comment-badge {
+	margin-left: -2px;
+}
+.yt-img-shadow-1 {
+	display: inline-block;
+	opacity: 0;
+	transition: opacity 0.2s;
+	-ms-flex: none;
+	-webkit-flex: none;
+	flex: none;
+}
+.yt-img-shadow-1.no-transition {
+	opacity: 1;
+	transition: none;
+}
+[loaded].yt-img-shadow-1 {
+	opacity: 1;
+}
+.ytd-comment-renderer-1 .ytd-comment-renderer#author-thumbnail yt-img-shadow.ytd-comment-renderer {
+	width: 40px;
+	height: 40px;
+	margin-right: 16px;
+	border-radius: 50%;
+	background-color: transparent;
+	overflow: hidden;
+}
+.yt-img-shadow-1 img.yt-img-shadow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: none;
+	max-width: 100%;
+	border-radius: none;
+}
+[object-fit='FILL'].yt-img-shadow-1 img.yt-img-shadow, [fit].yt-img-shadow-1 img.yt-img-shadow {
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body dir="ltr"><ytd-app class="x-scope ytd-app-1" is-watch-page=""><div class="style-scope ytd-app" id="content"><ytd-page-manager class="style-scope ytd-app x-scope ytd-page-manager-1" id="page-manager"><ytd-watch-flexy class="style-scope ytd-page-manager hide-skeleton x-scope ytd-watch-flexy-4" role="main" js-panel-height_="" video-id="FwwIYdB_wic" is-two-columns_="" flexy_="" flexy-small-window_="" is-four-three-to-sixteen-nine-video_=""><div class="style-scope ytd-watch-flexy" id="columns"><div class="style-scope ytd-watch-flexy" id="primary"><div class="style-scope ytd-watch-flexy" id="primary-inner"><ytd-comments class="style-scope ytd-watch-flexy  x-scope ytd-comments-1" id="comments"><ytd-item-section-renderer class="style-scope ytd-comments  x-scope ytd-item-section-renderer-1" id="sections" initial-count="2"><div class="style-scope ytd-item-section-renderer" id="contents"><ytd-comment-thread-renderer class=" style-scope ytd-item-section-renderer x-scope ytd-comment-thread-renderer-1"><ytd-comment-renderer class="style-scope ytd-comment-thread-renderer  x-scope ytd-comment-renderer-1" id="comment" comment-style="unknown"><div class="style-scope ytd-comment-renderer" id="body">
+  <div class="style-scope ytd-comment-renderer" id="author-thumbnail">
+    <a class="yt-simple-endpoint style-scope ytd-comment-renderer" href="/channel/UCbZgWG_fZVcV0ipt5ZQvVfw">
+      <yt-img-shadow class="style-scope ytd-comment-renderer no-transition x-scope yt-img-shadow-1" style="background-color: transparent;" height="40" width="40" loaded="" fit=""><img width="40" height="40" class="style-scope yt-img-shadow" id="img" alt="Can DOGGO Get 10.000 Subs?" src="_%author_thumbnail%_"></yt-img-shadow>
+    </a>
+  </div>
+  <div class="style-scope ytd-comment-renderer" id="main">
+    <div class="style-scope ytd-comment-renderer" id="header">
+      <div class="style-scope ytd-comment-renderer" id="header-badge" hidden="">
+        <div class="style-scope ytd-comment-renderer" id="linked-comment-badge" hidden=""></div>
+        <div class="style-scope ytd-comment-renderer" id="pinned-comment-badge" hidden=""></div>
+      </div>
+
+      <div class="style-scope ytd-comment-renderer" id="header-author">
+        <a class="yt-simple-endpoint style-scope ytd-comment-renderer" id="author-text" href="/channel/UCbZgWG_fZVcV0ipt5ZQvVfw">
+          <span class="style-scope ytd-comment-renderer">
+            _%author_name%_
+          </span>
+        </a>
+        <span class="style-scope ytd-comment-renderer" id="author-comment-badge" hidden=""></span>
+        <span class="style-scope ytd-comment-renderer" id="sponsor-comment-badge" hidden=""></span>
+        
+        <yt-formatted-string class="published-time-text above-comment style-scope ytd-comment-renderer  x-scope yt-formatted-string-5" has-link-only_=""><a class="yt-simple-endpoint style-scope yt-formatted-string" dir="auto" spellcheck="false" href="/watch?v=FwwIYdB_wic&amp;lc=Ugy2mGwaXZEFpjlliLZ4AaABAg">1 year ago</a></yt-formatted-string>
+        <span class="style-scope ytd-comment-renderer" id="author-reputation"></span>
+        <span class="style-scope ytd-comment-renderer" id="sponsors-only-badge" hidden=""></span>
+
+        <span class="style-scope ytd-comment-renderer" id="moderation-reason-divider" hidden="">
+          •
+        </span>
+        <span class="style-scope ytd-comment-renderer" id="moderation-reason-text" hidden="">
+          
+        </span>
+      </div>
+    </div>
+
+    
+    <ytd-expander class="style-scope ytd-comment-renderer  x-scope ytd-expander-4" id="expander" max-number-of-lines="4">
+      <yt-formatted-string class="style-scope ytd-comment-renderer" id="voted-option" hidden="" slot="content" disable-upgrade="">
+      </yt-formatted-string>
+      <yt-formatted-string class="style-scope ytd-comment-renderer  x-scope yt-formatted-string-6" id="content-text" slot="content" split-lines="">_%tresc%_</yt-formatted-string>
+    </ytd-expander>
+    
+    <yt-formatted-string class="published-time-text below-comment style-scope ytd-comment-renderer  x-scope yt-formatted-string-5" hidden="true" has-link-only_=""><a class="yt-simple-endpoint style-scope yt-formatted-string" dir="auto" spellcheck="false" href="/watch?v=FwwIYdB_wic&amp;lc=Ugy2mGwaXZEFpjlliLZ4AaABAg">22 hours ago</a></yt-formatted-string>
+    <ytd-comment-action-buttons-renderer class="style-scope ytd-comment-renderer  x-scope ytd-comment-action-buttons-renderer-1" id="action-buttons" action-buttons-style="desktop-toolbar"><div class="style-scope ytd-comment-action-buttons-renderer" id="toolbar">
+  <div class="style-scope ytd-comment-action-buttons-renderer" id="reply-button">
+  </div>
+  <span class="style-scope ytd-comment-action-buttons-renderer" id="vote-count-left" aria-label="1.2K likes" hidden="">
+    1.2K
+  </span>
+  <ytd-toggle-button-renderer class="style-scope ytd-comment-action-buttons-renderer style-text size-default  x-scope ytd-toggle-button-renderer-2" id="like-button" is-icon-button="" use-keyboard-focused="" has-no-text="" button-renderer="true"><a tabindex="-1" class="yt-simple-endpoint style-scope ytd-toggle-button-renderer" href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fwatch%253Fv%253DFwwIYdB_wic&amp;hl=en"><yt-icon-button class="style-scope ytd-toggle-button-renderer style-text size-default  x-scope yt-icon-button-2" id="button"><button class="style-scope yt-icon-button" id="button" aria-pressed="false" aria-label="Like this comment along with 1,265 other people"><yt-icon class="style-scope ytd-toggle-button-renderer  x-scope yt-icon-1"><svg xmlns="http://www.w3.org/2000/svg" class="style-scope yt-icon" style="width: 100%; height: 100%; display: block; pointer-events: none;" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon">
+        <path class="style-scope yt-icon" d="M 1 21 h 4 V 9 H 1 v 12 Z m 22 -11 c 0 -1.1 -0.9 -2 -2 -2 h -6.31 l 0.95 -4.57 l 0.03 -0.32 c 0 -0.41 -0.17 -0.79 -0.44 -1.06 L 14.17 1 L 7.59 7.59 C 7.22 7.95 7 8.45 7 9 v 10 c 0 1.1 0.9 2 2 2 h 9 c 0.83 0 1.54 -0.5 1.84 -1.22 l 3.02 -7.05 c 0.09 -0.23 0.14 -0.47 0.14 -0.73 v -1.91 l -0.01 -0.01 L 23 10 Z" />
+      </g></svg>
+</yt-icon></button></yt-icon-button></a></ytd-toggle-button-renderer>
+  <span class="style-scope ytd-comment-action-buttons-renderer" id="vote-count-middle" aria-label="1.2K likes">
+    _%likes%_
+  </span>
+  <ytd-toggle-button-renderer class="style-scope ytd-comment-action-buttons-renderer style-text size-default  x-scope ytd-toggle-button-renderer-2" id="dislike-button" is-icon-button="" use-keyboard-focused="" has-no-text="" button-renderer="true"><a tabindex="-1" class="yt-simple-endpoint style-scope ytd-toggle-button-renderer" href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fwatch%253Fv%253DFwwIYdB_wic&amp;hl=en"><yt-icon-button class="style-scope ytd-toggle-button-renderer style-text size-default  x-scope yt-icon-button-2" id="button"><button class="style-scope yt-icon-button" id="button" aria-pressed="false" aria-label="Dislike this comment"><yt-icon class="style-scope ytd-toggle-button-renderer  x-scope yt-icon-1"><svg xmlns="http://www.w3.org/2000/svg" class="style-scope yt-icon" style="width: 100%; height: 100%; display: block; pointer-events: none;" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="style-scope yt-icon">
+        <path class="style-scope yt-icon" d="M 15 3 H 6 c -0.83 0 -1.54 0.5 -1.84 1.22 l -3.02 7.05 c -0.09 0.23 -0.14 0.47 -0.14 0.73 v 1.91 l 0.01 0.01 L 1 14 c 0 1.1 0.9 2 2 2 h 6.31 l -0.95 4.57 l -0.03 0.32 c 0 0.41 0.17 0.79 0.44 1.06 L 9.83 23 l 6.59 -6.59 c 0.36 -0.36 0.58 -0.86 0.58 -1.41 V 5 c 0 -1.1 -0.9 -2 -2 -2 Z m 4 0 v 12 h 4 V 3 h -4 Z" />
+      </g></svg>
+</yt-icon></button></yt-icon-button></a></ytd-toggle-button-renderer>
+  <div class="style-scope ytd-comment-action-buttons-renderer" id="creator-heart"></div>
+  <div class="style-scope ytd-comment-action-buttons-renderer" id="share-button" hidden="">
+  </div>
+  <div class="style-scope ytd-comment-action-buttons-renderer" id="reply-button-end">
+  <ytd-button-renderer class="style-scope ytd-comment-action-buttons-renderer style-text size-default  x-scope ytd-button-renderer-5" is-paper-button="" use-keyboard-focused="" button-renderer=""><a tabindex="-1" class="yt-simple-endpoint style-scope ytd-button-renderer" href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fwatch%253Fv%253DFwwIYdB_wic&amp;hl=en"><paper-button tabindex="0" class="style-scope ytd-button-renderer style-text size-default  x-scope paper-button-1" id="button" role="button" aria-disabled="false" aria-label="Reply" elevation="0" animated=""><yt-formatted-string class="style-scope ytd-button-renderer style-text size-default  x-scope yt-formatted-string-4" id="text">Reply</yt-formatted-string></paper-button></a></ytd-button-renderer></div>
+</div>
+<div class="style-scope ytd-comment-action-buttons-renderer" id="reply-dialog"></div>
+</ytd-comment-action-buttons-renderer>
+    <div class="style-scope ytd-comment-renderer" id="moderation-buttons" hidden=""></div>
+    <ytd-button-renderer class="style-scope ytd-comment-renderer  x-scope ytd-button-renderer-4" id="view-threaded-replies" aria-expanded="false" use-keyboard-focused="" button-renderer="" noink=""></ytd-button-renderer>
+    <ytd-button-renderer class="style-scope ytd-comment-renderer  x-scope ytd-button-renderer-4" id="hide-threaded-replies" aria-expanded="true" use-keyboard-focused="" button-renderer="" noink=""></ytd-button-renderer>
+  </div>
+
+  <div class="style-scope ytd-comment-renderer" id="action-menu"></div>
+</div>
+<div class="style-scope ytd-comment-renderer" id="edit-dialog" hidden=""></div>
+</ytd-comment-renderer></ytd-comment-thread-renderer></div></ytd-item-section-renderer></ytd-comments></div></div></div></ytd-watch-flexy></ytd-page-manager></div></ytd-app></body>
+</html>
